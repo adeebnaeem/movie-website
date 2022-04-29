@@ -1,0 +1,430 @@
+body {
+    font-family: 'Lato', sans-serif !important;
+    margin: 0;
+    padding: 0;
+}
+
+@media only screen and (max-width :991px) {
+    .navtabsb {
+        display: block !important;
+    }
+    .head-search {
+        display: none !important;
+    }
+    .slider-detail {
+        transform: translate(10px, -180px) !important;
+    }
+    .migmain {
+        margin: 23px 0px !important;
+    }
+    .btn-2 {
+        font-size: 19px !important;
+    }
+    .videosimg img {
+        width: 100% !important;
+    }
+    .shotimgs img {
+        width: 100% !important;
+    }
+    .actionimgs img {
+        width: 100% !important;
+    }
+    .slider-detail {
+        display: none !important;
+    }
+}
+
+@media only screen and (max-width :551px) {
+    .btn-2 {
+        font-size: 16px !important;
+    }
+    .smmlfont h2 {
+        font-size: 20px !important;
+    }
+}
+
+@media only screen and (max-width :414px) {
+    .smmlfont h2 {
+        font-size: 15px !important;
+    }
+    .italic h1 {
+        font-size: 21px !important;
+    }
+}
+
+
+/* navbar css start from here */
+
+.navbar-toggler {
+    background-color: white !important;
+}
+
+.navbar-toggler span {
+    background-color: #E50914 !important;
+}
+
+.logocon a img {
+    height: 30px !important;
+}
+
+.btn-red {
+    background: #E50914 !important;
+    font-weight: 400 !important;
+    border-radius: 5px !important;
+}
+
+.btn3 {
+    font-weight: 200 !important;
+}
+
+.btn-red a {
+    text-decoration: none;
+    color: #ffffff !important;
+}
+
+.bg-img {
+    background-image: url(./assests/bg.jpg);
+    height: 970px;
+    height: 100vh;
+    background-size: cover;
+    box-shadow: inset 0 0 0 2000px rgb(0 0 0 / 80%);
+    background-position: center;
+}
+
+.header-widht {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn-2 {
+    color: white;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.svg-inline--fa {
+    display: inline-block;
+    font-size: inherit;
+    height: 1em;
+    overflow: visible;
+    vertical-align: -0.125em;
+}
+
+.bg-dark-black {
+    background-color: #111111 !important;
+}
+
+.bg-dark-nav {
+    background-color: #111111 !important;
+}
+
+.tab-desc {
+    background: #0D0D0D !important;
+}
+
+.watch-down-tab .nav-tabs .nav-link,
+.watch-down-tab .nav-tabs .nav-link:hover {
+    background-color: #111111;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
+.tab-bg {
+    color: #707070 !important;
+}
+
+.font-weight-bold {
+    color: white !important;
+}
+
+.active {
+    color: white !important;
+}
+
+.active .fa-laptop-code {
+    font-size: 30px;
+    color: white;
+}
+
+.bg-black {
+    background-color: #000000;
+}
+
+.top-footer h2 {
+    padding-top: 60px;
+    padding-bottom: 25px;
+}
+
+.font-22 {
+    font-size: 22px !important;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.uls li {
+    list-style: none;
+}
+
+.uls li a,
+.ls-1 {
+    text-decoration: none;
+    line-height: 35px;
+    color: #B9B9B9;
+}
+
+.red {
+    color: #E50914;
+    text-decoration: none;
+}
+
+
+/* navbar css start from End */
+
+.sigin-widget {
+    background: rgba(0, 0, 0, 0.7);
+    min-width: 315px;
+    width: 350px;
+}
+
+.dark,
+.dark:hover {
+    color: #777676;
+}
+
+.login input {
+    background-color: transparent !important;
+}
+
+.new-user-signup a,
+.float-right {
+    text-decoration: none !important;
+}
+
+.checker-contain .remember {
+    font-weight: 100 !important;
+    font-size: 14px;
+}
+
+.check-container {
+    display: block !important;
+    position: relative !important;
+    padding-left: 24px !important;
+    margin-bottom: 12px !important;
+    margin-top: 5px !important;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.remember {
+    position: relative;
+}
+
+.check-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.sigin-widget input,
+.sigin-widget input:focus {
+    margin-top: 20px;
+    background-color: #171818 !important;
+    border: 0;
+}
+
+.float-right {
+    font-size: 14px;
+    position: relative;
+    left: 60px !important;
+}
+
+.new-user-signup {
+    font-size: 13px;
+}
+
+.new-user-signup span {
+    color: #585858;
+}
+
+.new-user-signup .white {
+    color: white;
+    font-weight: 500;
+}
+
+.check-container input:checked~.checkmark {
+    background-color: #E50914;
+    border: 0;
+    color: #ffffff !important;
+}
+
+.checkmark {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    border: 1px solid #707070;
+    border-radius: 2px;
+}
+
+.light-dark,
+.light-dark:hover {
+    color: #B9B9B9;
+}
+
+.disnone {
+    display: none !important;
+}
+
+.disnone1 {
+    display: block !important;
+}
+
+.nav-tabs {
+    margin-left: 10px;
+}
+
+.nav-tabs button {
+    border: none !important;
+    background-color: #111111 !important;
+    font-weight: 500 !important;
+}
+
+.groupintup span {
+    background-color: #111111 !important;
+    border: none !important;
+    position: absolute;
+}
+
+.groupintup input {
+    background-color: #111111 !important;
+}
+
+.head-search {
+    position: relative;
+    width: 350px;
+}
+
+.head-search label {
+    position: absolute;
+    margin: 0;
+    padding: 7px 10px;
+    color: #777676;
+}
+
+svg:not(:root).svg-inline--fa {
+    overflow: visible;
+}
+
+.head-search input {
+    padding: 5px 5px 5px 30px;
+    border: 1px solid #707070;
+    color: #777676;
+}
+
+.nav-link {
+    color: #B9B9B9 !important;
+    font-weight: bold !important;
+}
+
+.nav-tabs .active {
+    border-bottom: 2px solid #E50914 !important;
+    color: white !important;
+}
+
+.slider-detail {
+    position: absolute;
+    top: 80%;
+    left: 20px;
+    transform: translate(0, -50%);
+    z-index: 2;
+}
+
+.slider-para {
+    width: 95%;
+    max-width: 650px;
+    max-height: 50px;
+    overflow: hidden;
+}
+
+.white,
+.white:hover {
+    color: #ffffff !important;
+}
+
+.light-white,
+.light-white:hover {
+    color: #E6E6E6;
+}
+
+.slider-overlay {
+    position: relative !important;
+    z-index: 1;
+}
+
+.slider-overlay:before {
+    content: '';
+    position: absolute !important;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 5vh !important;
+    width: 100% !important;
+    z-index: 1 !important;
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0), rgb(13, 13, 13)) !important;
+}
+
+.watchcon {
+    background-color: rgb(13, 13, 13)!important;
+}
+
+.whatchconatiner h4 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.lowercontent h4 {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.popularmoviescon h5 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+/* .imgscontent {
+    display: flex;
+    justify-content: space-between;
+} */
+
+.videosimg img {
+    width: 100% !important;
+}
+
+.lan-drop select {
+    padding: 5px 42px 10px 10px;
+    background: transparent;
+    color: #B9B9B9;
+    border: 1px solid #aaa;
+    border-radius: 0;
+    display: inline-block;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    outline: none;
+}

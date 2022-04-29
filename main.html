@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg  p-3 bg-dark-nav ">
+        <div class="container-fluid">
+            <img style="height: 30px;" src="./assests/site-logo-1617604604-qrIeV.png" alt="">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon text-black"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <nav>
+                        <div class="nav nav-tabs  navtabsb" id="nav-tab" role="tablist">
+                            <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Home</button>
+                            <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Movie</button>
+                            <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Sports</button>
+                            <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-kids" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Kids</button>
+                            <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-show" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Tv Show</button>
+
+                        </div>
+                    </nav>
+
+                </ul>
+                <form class="d-flex">
+                    <div class="head-search">
+                        <label><svg class="svg-inline--fa fa-search fa-w-16" aria-hidden="true" focusable="false"
+                                data-prefix="fas" data-icon="search" role="img" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 512 512" data-fa-i2svg="">
+                                <path fill="currentColor"
+                                    d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z">
+                                </path>
+                            </svg><!-- <i class="fas fa-search"></i> Font Awesome fontawesome.com --></label>
+                        <input class="form-control mr-2 bg-dark-black search_text" type="search" placeholder="Search" aria-label="Search" autocomplete="off" name="search_text">
+                        <ul class="typeahead dropdown-menu" style="max-height:220px;overflow:auto;"></ul>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab text-black">
+            <figure>
+                <div class="slide-img">
+                    <div class="slide-img-overlay"></div>
+                    <img src="https://cdn.clonegranny.com/PlayNow/video/images/Video-Image-1617711646-UShko.png" alt="1 minutes" class="w-100">
+                </div>
+                <div class="slider-detail">
+                    <h4 class="white font-40 bold ls-3">1 minutes</h4>
+                    <div class="my-4">
+                        <a href="javascript:void(0);" class="px-4 btn btn-light text-uppercase playItem" data-id="MTkwMDk4NjM1MjU4NDA2" data-url="http://playnownew.clonegranny.com/video/play/MTkwMDk4NjM1MjU4NDA2">
+                            <svg class="svg-inline--fa fa-play fa-w-14" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="play" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
+                                <path fill="currentColor"
+                                    d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z">
+                                </path>
+                            </svg>
+                            <!-- <i class="fas fa-play"></i> Font Awesome fontawesome.com -->Play
+                        </a>
+                        <a href="http://playnownew.clonegranny.com/addremoveuserwatchlist" class="ml-2 py-2 btn btn-dark addList-btn addtowatchlist" data-video="MTkwMDk4NjM1MjU4NDA2">
+                            + Add to List
+                        </a>
+                    </div>
+                    <p class="light-white slider-para"> 1 minutes </p>
+                </div>
+            </figure>
+            <div class="slider-overlay ">
+
+            </div>
+            <div class="watchcon">
+                <div class="container pt-5">
+                    <div class="whatchconatiner row">
+                        <h4 class="text-white">Continue Wactching</h4>
+                        <div class="col-lg-4">
+                            <img style="width: 100%;; margin-top: 10px;" src="./assests/Video-Image-1632490609-KlVIF.jpg" alt="">
+
+                        </div>
+                    </div>
+                    <div class="lowercontent pt-4">
+                        <h4>WatchList</h4>
+                        <div class="popularmoviescon pt-4">
+                            <h5>Popular On Playnow</h5>
+                            <div class="imgscontent pt-4  row">
+                                <div class="videosimg col-lg-4 py-2">
+                                    <img src="./assests/Video-Image-1.png" alt="">
+                                </div>
+                                <div class="videosimg col-lg-4 py-2">
+                                    <img src="./assests/Video-Image-2.jpg" alt="">
+                                </div>
+                                <div class="videosimg col-lg-4 py-2">
+                                    <img src="./assests/Video-Image-3.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lowercontent pt-4 pb-5">
+                        <div class="popularmoviescon pt-4">
+                            <h5>Trending Now</h5>
+                            <div class="imgscontent pt-4  row">
+                                <div class="videosimg col-lg-4 py-2">
+                                    <img src="./assests/Video-Image-1.png" alt="">
+                                </div>
+                                <div class="videosimg col-lg-4 py-2">
+                                    <img src="./assests/Video-Image-2.jpg" alt="">
+                                </div>
+                                <div class="videosimg col-lg-4 py-2">
+                                    <img src="./assests/Video-Image-3.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+            <div class="watchcon">
+                <div class="container lowercontent pt-4">
+                    <h4 style="font-size: 27px !important; font-weight: 600; letter-spacing: 2px;">Movie</h4>
+                    <div class="popularmoviescon pt-2">
+                        <h5>Popular On Playnow</h5>
+                        <div class="imgscontent pt-4  row">
+                            <div class="videosimg col-lg-3 py-2">
+                                <img src="./assests/Video-Image-1.png" alt="">
+                            </div>
+                            <div class="videosimg col-lg-3 py-2">
+                                <img src="./assests/Video-Image-5.jpg" alt="">
+                            </div>
+                            <div class="videosimg col-lg-3 py-2">
+                                <img src="./assests/Video-Image-3.png" alt="">
+                            </div>
+                            <div class="videosimg col-lg-3 py-2">
+                                <img src="./assests/Video-Image-3.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popularmoviescon pt-4">
+                        <h5>Trending Now</h5>
+                        <div class="imgscontent pt-4  row">
+                            <div class="videosimg col-lg-3 py-2">
+                                <img src="./assests/Video-Image-1.png" alt="">
+                            </div>
+                            <div class="videosimg col-lg-3 py-2">
+                                <img src="./assests/Video-Image-2.jpg" alt="">
+                            </div>
+                            <div class="videosimg col-lg-3 py-2">
+                                <img src="./assests/Video-Image-3.png" alt="">
+                            </div>
+                            <div class="videosimg col-lg-3 py-2">
+                                <img src="./assests/Video-Image-6.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pt-4">
+                        <h4>Action</h4>
+                        <div class="actionimgs">
+                            <img style="height: 184px;" src="./assests/Video-Image-1632490609-KlVIF.jpg" alt="">
+                            <img style="height: 184px; margin: 0 20px; " class="migmain" src="./assests/Video-Image-1632490609-KlVIF.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="popularmoviescon pt-4">
+                        <h5>Adventure</h5>
+                        <div class="imgscontent pt-4  row">
+                            <div class="videosimg col-lg-3 py-2">
+                                <img src="./assests/Video-Image-1.png" alt="">
+                            </div>
+                            <div class="videosimg col-lg-3 py-2">
+                                <img src="./assests/Video-Image-2.jpg" alt="">
+                            </div>
+                            <div class="videosimg col-lg-3 py-2">
+                                <img src="./assests/Video-Image-6.jpg" alt="">
+                            </div>
+                            <div class="videosimg col-lg-3 py-2">
+                                <img src="./assests/Video-Image-3.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pt-4">
+                        <h4>Drama</h4>
+                        <div class="shotimgs">
+                            <img style="height: 184px;" src="./assests/Video-Image-1632490609-KlVIF.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="pt-4 pb-5">
+                        <h4>Short Movie</h4>
+                        <div class="shotimgs">
+                            <img style="height: 184px;" src="./assests/Video-Image-4.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+            <div class="watchcon">
+                <div class="container">
+                    <div class="pt-4">
+                        <h4 style="font-size: 27px !important; font-weight: 600; letter-spacing: 2px;">Sports</h4>
+                        <div class="imgscontent pt-4  row">
+                            <div class="videosimg col-lg-3 py-2">
+                                <img src="./assests/sports2.jpg" alt="">
+                            </div>
+                            <div class="videosimg col-lg-3 py-2">
+                                <img src="./assests/sports1.jpg" alt="">
+                            </div>
+                            <div class="videosimg col-lg-3 py-2">
+                                <img src="./assests/sports3.png" alt="">
+                            </div>
+                            <div class="videosimg col-lg-3 py-2">
+                                <img src="./assests/sports1.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pt-4">
+                        <h4>Trending Now</h4>
+                        <div class="imgscontent pt-4  row">
+                            <div class="videosimg col-lg-3 py-2">
+                                <img src="./assests/Video-Image-1.png" alt="">
+                            </div>
+                            <div class="videosimg col-lg-3 py-2">
+                                <img src="./assests/sports5.png" alt="">
+                            </div>
+                            <div class="videosimg col-lg-3 py-2">
+                                <img src="./assests/Video-Image-3.png" alt="">
+                            </div>
+                            <div class="videosimg col-lg-3 py-2">
+                                <img src="./assests/sports2.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pt-4">
+                        <h4>Action</h4>
+                        <div class="shotimgs">
+                            <img style="height: 184px;" src="./assests/sports2.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="pt-4">
+                        <h4>Adventure</h4>
+                        <div class="shotimgs">
+                            <img style="height: 184px;" src="./assests/sports5.png" alt="">
+                        </div>
+                    </div>
+                    <div class="pt-4">
+                        <h4>Documentary
+                        </h4>
+                        <div class="shotimgs">
+                            <img style="height: 184px;" src="./assests/sports1.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="pt-4">
+                        <h4>Fantasy
+                        </h4>
+                        <div class="shotimgs">
+                            <img style="height: 184px;" src="./assests/sports2.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="pt-4 pb-5">
+                        <h4>Short Movie</h4>
+                        <div class="shotimgs">
+                            <img style="height: 184px;" src="./assests/sports4.jpg" alt="">
+                            <img style="height: 184px; margin: 0 20px;" class="migmain" src="./assests/sports5.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="nav-kids" role="tabpanel" aria-labelledby="nav-contact-tab">
+            <div class="watchcon">
+                <div class="container">
+                    <div class="pt-4">
+                        <h4 style="font-size: 27px !important; font-weight: 600; letter-spacing: 2px;">Kids</h4>
+                        <div class="imgscontent pt-4  row">
+                            <div class="videosimg col-lg-3 py-2">
+                                <img src="./assests/kidsimg1.png" alt="">
+                            </div>
+                            <div class="videosimg col-lg-3 py-2">
+                                <img src="./assests/kidsimg2.jpg" alt="">
+                            </div>
+                            <div class="videosimg col-lg-3 py-2">
+                                <img src="./assests/kidsimg3.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pt-4">
+                        <h4>Popular On PlayNow</h4>
+                        <div class="imgscontent pt-4  row">
+                            <div class="videosimg col-lg-3 py-2">
+                                <img src="./assests/Video-Image-1.png" alt="">
+                            </div>
+                            <div class="videosimg col-lg-3 py-2">
+                                <img src="./assests/kidsimg3.jpg" alt="">
+                            </div>
+                            <div class="videosimg col-lg-3 py-2">
+                                <img src="./assests/kidsimg1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pt-4">
+                        <h4>Monstor</h4>
+                        <div class="shotimgs">
+                            <img style="height: 184px;" src="./assests/sports2.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="pt-4">
+                        <h4>Science Fiction</h4>
+                        <div class="shotimgs">
+                            <img style="height: 184px;" src="./assests/kidsimg2.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="pt-4 pb-5">
+                        <h4>Thriler
+                        </h4>
+                        <div class="shotimgs">
+                            <img style="height: 184px;" src="./assests/kidsimg1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="tab-pane fade" id="nav-show" role="tabpanel" aria-labelledby="nav-contact-tab">
+            <div class="watchcon">
+                <div class="container">
+                    <div class="pt-4">
+                        <h4 style="font-size: 27px !important; font-weight: 600; letter-spacing: 2px;">TV Shows</h4>
+                        <div class="imgscontent pt-4  row">
+                            <div class="videosimg col-lg-3 py-2">
+                                <img src="./assests/tvshows1.png" alt="">
+                            </div>
+                            <div class="videosimg col-lg-3 py-2">
+                                <img src="./assests/tvshows2.jpg" alt=" ">
+                            </div>
+                            <div class="videosimg col-lg-3 py-2 ">
+                                <img src="./assests/tvshows3.png " alt=" ">
+                            </div>
+                            <div class="videosimg col-lg-3 py-2 ">
+                                <img src="./assests/tvshows4.jpg" alt=" ">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pt-4 ">
+                        <h4>Trending Now</h4>
+                        <div class="imgscontent pt-4 row ">
+                            <div class="videosimg col-lg-3 py-2 ">
+                                <img src="./assests/tvshows4.jpg" alt=" ">
+                            </div>
+                            <div class="videosimg col-lg-3 py-2 ">
+                                <img src="./assests/sports5.png " alt=" ">
+                            </div>
+                            <div class="videosimg col-lg-3 py-2 ">
+                                <img src="./assests/tvshows5.jpg" alt=" ">
+                            </div>
+                            <div class="videosimg col-lg-3 py-2 ">
+                                <img src="./assests/sports2.jpg " alt=" ">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pt-4 ">
+                        <h4>Comedy</h4>
+                        <div class="shotimgs">
+                            <img style="height: 184px; " src="./assests/sports2.jpg " alt=" ">
+                        </div>
+                    </div>
+                    <div class="pt-4 ">
+                        <h4>Drama</h4>
+                        <div class="shotimgs">
+                            <img style="height: 184px; " src="./assests/sports5.png " alt=" ">
+                        </div>
+                    </div>
+                    <div class="pt-4 ">
+                        <h4>Documentary
+                        </h4>
+                        <div class="shotimgs">
+                            <img style="height: 184px; " src="./assests/sports1.jpg " alt=" ">
+                        </div>
+                    </div>
+                    <div class="pt-4 ">
+                        <h4>Science Fiction
+                        </h4>
+                        <div class="shotimgs">
+                            <img style="height: 184px; " src="./assests/sports2.jpg " alt=" ">
+                        </div>
+                    </div>
+                    <div class="pt-4 pb-5 ">
+                        <h4>Short Movie</h4>
+                        <div class="shotimgs">
+                            <img style="height: 184px; " src="./assests/sports4.jpg " alt=" ">
+                            <img style="height: 184px; margin: 0 20px; " class="migmain" src="./assests/sports5.png " alt=" ">
+                        </div>
+                    </div>
+                    <div class="pt-4 ">
+                        <h4> Spy Movie
+                        </h4>
+                        <div class="shotimgs">
+                            <img style="height: 184px; " src="./assests/tvshows3.png" alt=" ">
+                        </div>
+                    </div>
+                    <div class="pt-4 pb-5 ">
+                        <h4> War
+                        </h4>
+                        <div class="shotimgs">
+                            <img style="height: 184px; " src="./assests/wartvshow.jpg" alt=" ">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <footer class="bg-black footer-stickey footmain ">
+            <div class="top-footer bg-black ">
+                <div class="container ">
+                    <div class="row ">
+                        <div class="col-12 text-left ">
+                            <h2 class="font-22 bold text-white ">Questions? Contact us.</h2>
+                        </div>
+                        <div class="col-12 uls ">
+                            <ul class="row p-0 ">
+                                <li class="col-lg-3 col-sm-6 col-md-6 ">
+                                    <a href="https://www.alphansotech.com/about ">About us</a>
+                                </li>
+                                <li class="col-lg-3 col-sm-6 col-md-6 ">
+                                    <a href="https://www.alphansotech.com/privacy-policy ">Privacy and Policy</a>
+                                </li>
+                                <li class="col-lg-3 col-sm-6 col-md-6 ">
+                                    <a href="https://www.alphansotech.com/terms-and-conditions ">Terms and Condition</a>
+                                </li>
+                                <li class="col-lg-3 col-sm-6 col-md-6 ">
+                                    <a href="https://www.alphansotech.com/contact ">Contact Us</a>
+                                </li>
+                                <li class="col-lg-12 col-sm-6 col-md-6 ">
+                                    <a href="http://playnownew.clonegranny.com/p/server-requirment ">Server
+                                        Requirement</a>
+                                </li>
+                                <li class="col-lg-4 col-sm-6 col-md-6 ">
+                                    <div class="movie-list lan-drop my-2 ">
+                                        <select class="lang selecter-bar form-control ">
+                                            <option value="en " selected=" ">English</option>
+                                        </select>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-footer ">
+                <div class="container ">
+                    <div class="row ">
+                        <div class="col-12 py-3 ">
+                            <span class=" ls-1 ">© 2021, all rights reserved by
+                                <a href="/ " class="red "> PlayNow</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p " crossorigin="anonymous "></script>
+</body>
+
+</html>

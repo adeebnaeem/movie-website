@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix clone</title>
+    <!-- bootstrap css link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <section class="bg-img">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid logocon">
+                <a class="navbar-brand" href="#"><img src="./assests/site-logo-1617604604-qrIeV.png" alt=""></a>
+                <form class="d-flex">
+                    <button class="btn btn-red text-center py-1 px-3" type="submit"> <a href="./signin.html">Sign in</a></button>
+                </form>
+            </div>
+            </div>
+        </nav>
+        <header class="header-widht">
+            <div class="text-center">
+                <div>
+                    <h1 class="italic white bold text-white">
+                        See what's next.
+                    </h1>
+                </div>
+                <div class="py-3 text-white   smmlfont">
+                    <h2>WATCH ANYWHERE. CANCEL AT ANY TIME</h2>
+                </div>
+
+                <a href="./main.html" class="btn btn-2 btn-red py-sm-2 px-sm-5 radius-0">WATCH JOIN NOW        <svg class="svg-inline--fa fa-chevron-right fa-w-10 ml-5" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg>
+                </a>
+            </div>
+        </header>
+    </section>
+    <section id="tabs" class="index-tab" style="background-color: black;">
+        <div class="tab-widget container-fluid bg-dark-black pt-sm-2 pt-2">
+            <nav class="container mb-minus-5 watch-down-tab">
+                <div class="nav  nav-fill" id="nav-tab" role="tablist">
+                    <a class="nav-item nav-link text-center tab-bg pt-sm-4 pb-sm-3 active show" id="device" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true" style="outline: none;">
+                        <div class="pb-2">
+                            <svg class="svg-inline--fa fa-laptop-code fa-w-20 font-60" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="laptop-code" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" data-fa-i2svg=""><path fill="currentColor" d="M255.03 261.65c6.25 6.25 16.38 6.25 22.63 0l11.31-11.31c6.25-6.25 6.25-16.38 0-22.63L253.25 192l35.71-35.72c6.25-6.25 6.25-16.38 0-22.63l-11.31-11.31c-6.25-6.25-16.38-6.25-22.63 0l-58.34 58.34c-6.25 6.25-6.25 16.38 0 22.63l58.35 58.34zm96.01-11.3l11.31 11.31c6.25 6.25 16.38 6.25 22.63 0l58.34-58.34c6.25-6.25 6.25-16.38 0-22.63l-58.34-58.34c-6.25-6.25-16.38-6.25-22.63 0l-11.31 11.31c-6.25 6.25-6.25 16.38 0 22.63L386.75 192l-35.71 35.72c-6.25 6.25-6.25 16.38 0 22.63zM624 416H381.54c-.74 19.81-14.71 32-32.74 32H288c-18.69 0-33.02-17.47-32.77-32H16c-8.8 0-16 7.2-16 16v16c0 35.2 28.8 64 64 64h512c35.2 0 64-28.8 64-64v-16c0-8.8-7.2-16-16-16zM576 48c0-26.4-21.6-48-48-48H112C85.6 0 64 21.6 64 48v336h512V48zm-64 272H128V64h384v256z"></path></svg>
+                            <!-- <i class="fas fa-laptop-code font-60"></i> Font Awesome fontawesome.com -->
+                        </div>
+                        Watch any device</a>
+                    <a class="nav-item  nav-link text-center tab-bg pt-sm-4 pb-sm-3" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false" style="outline: none;">
+                        <div class="pb-2">
+                            <!-- <i class="fas fa-cloud-download-alt font-60"></i> --><svg class="svg-inline--fa fa-sign-in-alt fa-w-16 font-60" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="sign-in-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M416 448h-84c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h84c17.7 0 32-14.3 32-32V160c0-17.7-14.3-32-32-32h-84c-6.6 0-12-5.4-12-12V76c0-6.6 5.4-12 12-12h84c53 0 96 43 96 96v192c0 53-43 96-96 96zm-47-201L201 79c-15-15-41-4.5-41 17v96H24c-13.3 0-24 10.7-24 24v96c0 13.3 10.7 24 24 24h136v96c0 21.5 26 32 41 17l168-168c9.3-9.4 9.3-24.6 0-34z"></path></svg>
+                            <!-- <i class="fas fa-sign-in-alt font-60"></i> Font Awesome fontawesome.com -->
+                        </div>
+                        Join Now
+                    </a>
+                </div>
+            </nav>
+        </div>
+        <div class="container-fluid tab-desc">
+            <div class="container">
+                <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+                    <div class="tab-pane fade active show" id="nav-home" role="tabpanel" aria-labelledby="nav-home">
+                        <div class="row py-5">
+                            <div class="col-sm-6 col-12 white mt-md-4">
+                                <h2 class="text-justify">If you decide Playnow isn't for you – no problem. No commitment. Cancel online at any time.</h2>
+                                <a href="" class="btn btn-red font-weight-bold font-16 mt-3 px-5 py-2">WATCH JOIN NOW</a>
+                            </div>
+                            <div class="col-sm-6 col-12">
+                                <img src="http://playnow.clonegranny.com/public/img/mockup.png" class="img-fluid mt-4 mt-sm-0" alt="mokup">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab" style="outline: none;">
+                        <div class="row py-5">
+                            <div class="col-sm-6 col-12 white mt-md-5">
+                                <h2 class="text-justify">Watch TV programmes and films at any time, anywhere – personalised for you.</h2><br>
+                                <a href="http://playnownew.clonegranny.com/signup" class="btn btn-red font-weight-bold  mt-3 px-5 py-2 ">WATCH JOIN NOW</a>
+                            </div>
+                            <div class="col-sm-6 col-12">
+                                <img src="http://playnow.clonegranny.com/public/img/Group-74.png" class="img-fluid mt-4 mt-sm-0" alt="mokup">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-black footer-stickey">
+        <div class="top-footer bg-black">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-left">
+                        <h2 class="font-22 bold text-white">Questions? Contact us.</h2>
+                    </div>
+                    <div class="col-12 uls">
+                        <ul class="row p-0">
+                            <li class="col-lg-3 col-sm-6 col-md-6">
+                                <a href="https://www.alphansotech.com/about">About us</a>
+                            </li>
+                            <li class="col-lg-3 col-sm-6 col-md-6">
+                                <a href="https://www.alphansotech.com/privacy-policy">Privacy and Policy</a>
+                            </li>
+                            <li class="col-lg-3 col-sm-6 col-md-6">
+                                <a href="https://www.alphansotech.com/terms-and-conditions">Terms and Condition</a>
+                            </li>
+                            <li class="col-lg-3 col-sm-6 col-md-6">
+                                <a href="https://www.alphansotech.com/contact">Contact Us</a>
+                            </li>
+                            <li class="col-lg-12 col-sm-6 col-md-6">
+                                <a href="http://playnownew.clonegranny.com/p/server-requirment">Server Requirement</a>
+                            </li>
+                            <li class="col-lg-4 col-sm-6 col-md-6">
+                                <div class="movie-list lan-drop my-2">
+                                    <select class="lang selecter-bar form-control ">
+                                        <option value="en" selected="">English</option>
+                                    </select>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 py-3">
+                        <span class=" ls-1">© 2021, all rights reserved by
+                            <a href="/" class="red"> PlayNow</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+
+</html>
